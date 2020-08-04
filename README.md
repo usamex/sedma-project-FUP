@@ -1,0 +1,11 @@
+# Sedma Game
+Sedma game platform with an AI written in Haskell
+
+### Rules
+Sedma is a 4-card trick-and-draw game played with a 32-card piquet deck. The game is played by four players A, B, C, and D in fixed partnerships, sitting crosswise (A plays with C, B plays with D). The suits are irrelevant for this game, and the ranks are not ordered in a hierarchy. Aces and tens have card-point values of 10 points each, while all other cards have no card-point value. Every player is dealt 4 cards. The remaining cards form a stock from which the players fill up their hands while it lasts.
+
+### Round
+The game is played in rounds. In one round, each player plays one card, and the four played cards constitute a trick. The first card is played by a leader and other players play their cards in a clock-wise order. The players are completely free in which card to play to the trick. The last player to play a card of the same rank as the first card wins the trick and becomes the leader for the next round. The sevens function as jokers, that is, they assume the rank of the first card in the trick. However, if the first card is a seven, it just represents a seven. At the end of each round, the winner collects the trick and places it in front of him. Finally, each player takes one card from the stock (if available) starting with the winner who takes his card first. The first round is led by player A.
+
+### Counting
+The game ends when all the cards have been played. At the end of the game, each player counts the number of aces and tens in the tricks he or she had won. Each ace or ten counts for 10 points. There are additional 10 points for the winner of the last trick. The players in each team sum their scores. The winning team takes either 1, 2, or 3 points for a single game. The winning team takes 3 points, if the loosing team was not able to win a single trick. If the loosing team won one or more tricks but no trick was worth points (that is, the winning team has 90 points) the winning team takes 2 points. Otherwise, the winning team takes 1 point for the game.
